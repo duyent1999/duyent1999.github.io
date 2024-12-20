@@ -1,89 +1,68 @@
-/* General Reset */
-body, h1, h2, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body Styling */
-  body {
+/* Basic Styles */
+body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #d9f7e1; /* Light Green Pastel Background */
+    color: #333;
   }
   
-  /* Header Styling */
   header {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #a3d9a5; /* Soft Green Header */
+    color: white;
+    padding: 20px;
     text-align: center;
   }
   
-  header h1 {
-    font-size: 2rem;
-  }
-  
-  header nav ul {
+  nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
   }
   
-  header nav ul li {
+  nav ul li {
     display: inline;
   }
   
-  header nav ul li a {
-    color: #fff;
+  nav ul li a {
+    color: #2f4f4f; /* Dark Green Text */
     text-decoration: none;
-  }
-  
-  /* Section Styling */
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 20px;
-    background: #fff;
-    padding: 15px;
+    font-size: 1.2rem;
+    padding: 10px;
     border-radius: 5px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #7dbf7d; /* Slightly Darker Green on Hover */
+  }
+  
+  /* Tab content */
+  .tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: #f4f9f4; /* Light Pastel Green Content Background */
+    border-radius: 5px;
+    margin-top: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  .tabcontent h2 {
+    font-size: 1.8rem;
+    color: #4c8b4c; /* Darker Green for Headers */
   }
   
-  section p, section ul {
-    margin: 10px 0;
+  /* Active Tab */
+  .active-tab {
+    display: block;
   }
   
-  section ul {
-    list-style-type: square;
-    padding-left: 20px;
-  }
-  
-  section ul li a {
-    color: #007BFF;
-    text-decoration: none;
-  }
-  
-  section ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Footer Styling */
   footer {
-    text-align: center;
+    background-color: #a3d9a5;
+    color: white;
     padding: 10px;
-    background: #007BFF;
-    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
   }
